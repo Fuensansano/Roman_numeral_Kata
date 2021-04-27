@@ -34,4 +34,10 @@ class DecimalToRomanTest {
         DecimalToRoman decimalToRoman = new DecimalToRoman();
         assertEquals(decimalToRoman.convert(4), "IV");
     }
+
+    @Test
+    public void should_convert_5_to_V(){
+	    DecimalToRoman decimalToRoman = new DecimalToRoman();
+	    assertEquals(decimalToRoman.convert(5),"V");
+    }
 }
