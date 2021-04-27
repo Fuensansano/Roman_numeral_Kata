@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class DecimalToRomanTest {
 
 	@Test
-	public void give_me_a_good_name_please() {
+	public void should_create_a_decimal_to_roman() {
 		DecimalToRoman decimalToRoman = new DecimalToRoman();
 
 		boolean result = decimalToRoman.theMethod();
