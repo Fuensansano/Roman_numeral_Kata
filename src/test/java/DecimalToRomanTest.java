@@ -48,4 +48,9 @@ class DecimalToRomanTest {
     public void should_convert_6_to_VI(){
 	    assertEquals(converter.convert(6),"VI");
     }
+
+    @Test
+    public void should_convert_9_to_IX() {
+        assertEquals(converter.convert(9), "IX");
+    }
 }
