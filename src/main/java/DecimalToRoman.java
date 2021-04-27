@@ -1,6 +1,9 @@
 public class DecimalToRoman {
 
     public String convert(int number) {
-        return "I";
+        if (number == 1){
+            return "I";
+        }
+        return "II";
     }
 }
