@@ -28,4 +28,10 @@ class DecimalToRomanTest {
         DecimalToRoman decimalToRoman = new DecimalToRoman();
         assertEquals(decimalToRoman.convert(3), "III");
     }
+
+    @Test
+    public void should_convert_4_to_IV() {
+        DecimalToRoman decimalToRoman = new DecimalToRoman();
+        assertEquals(decimalToRoman.convert(4), "IV");
+    }
 }
