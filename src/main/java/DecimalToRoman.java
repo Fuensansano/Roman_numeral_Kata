@@ -1,16 +1,15 @@
 public class DecimalToRoman {
 
     public String convert(int number) {
-        if (number == 6){
-         return "VI";
-        }else if(number == 5) {
-            return "V";
-        } else if (number == 4){
+        String romanNumber = "";
+        if(number >= 5) {
+            romanNumber += "V";
+            number -= 5;
+        } else if (number == 4) {
             return "IV";
         }
 
-        String romanNumber = "";
-        for (int i = 0; i < number; i++){
+        for (int i = 0; i < number; i++) {
             romanNumber += "I";
         }
         return romanNumber;
