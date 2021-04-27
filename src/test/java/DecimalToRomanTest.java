@@ -40,4 +40,10 @@ class DecimalToRomanTest {
 	    DecimalToRoman decimalToRoman = new DecimalToRoman();
 	    assertEquals(decimalToRoman.convert(5),"V");
     }
+
+    @Test
+    public void should_convert_6_to_VI(){
+	    DecimalToRoman decimalToRoman = new DecimalToRoman();
+	    assertEquals(decimalToRoman.convert(6),"VI");
+    }
 }
