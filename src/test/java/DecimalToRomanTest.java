@@ -16,4 +16,10 @@ class DecimalToRomanTest {
         DecimalToRoman decimalToRoman = new DecimalToRoman();
         assertEquals(decimalToRoman.convert(1), "I");
     }
+
+    @Test
+    public void should_convert_2_to_II() {
+        DecimalToRoman decimalToRoman = new DecimalToRoman();
+        assertEquals(decimalToRoman.convert(2), "II");
+    }
 }
