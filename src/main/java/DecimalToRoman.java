@@ -1,4 +1,4 @@
-public class MyClass {
+public class DecimalToRoman {
 
     public boolean theMethod() {
         return true;
