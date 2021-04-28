@@ -54,3 +54,9 @@ class DecimalToRomanTest {
         assertEquals(converter.convert(9), "IX");
     }
 }
+
+    @Test
+    public void should_convert_10_to_X() {
+        assertEquals(converter.convert(10), "X");
+    }
+}
