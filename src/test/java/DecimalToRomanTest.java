@@ -88,4 +88,9 @@ class DecimalToRomanTest {
     public void should_convert_24_to_XXIV() {
         assertEquals(converter.convert(24),"XXIV");
     }
+
+    @Test
+    public void should_convert_29_to_XXIX() {
+        assertEquals(converter.convert(29),"XXIX");
+    }
 }
