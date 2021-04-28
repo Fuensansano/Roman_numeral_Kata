@@ -158,4 +158,9 @@ class DecimalToRomanTest {
     public void should_convert_1000_to_M() {
         assertEquals(converter.convert(1000),"M");
     }
+
+    @Test
+    public void should_convert_1491_to_MCDXCI() {
+        assertEquals(converter.convert(1491),"MCDXCI");
+    }
 }
