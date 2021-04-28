@@ -65,7 +65,12 @@ class DecimalToRomanTest {
     }
 
     @Test
-    public void should_convert_30_to_XXX(){
+    public void should_convert_30_to_XXX() {
         assertEquals(converter.convert(30),"XXX");
+    }
+
+    @Test
+    public void should_convert_25_to_XXV() {
+        assertEquals(converter.convert(25),"XXV");
     }
 }
