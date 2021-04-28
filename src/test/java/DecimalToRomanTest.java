@@ -83,4 +83,9 @@ class DecimalToRomanTest {
     public void should_convert_14_to_XIV() {
         assertEquals(converter.convert(14),"XIV");
     }
+
+    @Test
+    public void should_convert_24_to_XXIV() {
+        assertEquals(converter.convert(24),"XXIV");
+    }
 }
