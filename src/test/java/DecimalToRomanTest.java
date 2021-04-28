@@ -65,13 +65,8 @@ class DecimalToRomanTest {
     }
 
     @Test
-    public void should_convert_30_to_XXX() {
-        assertEquals(converter.convert(30),"XXX");
-    }
-
-    @Test
-    public void should_convert_25_to_XXV() {
-    assertEquals(converter.convert(25),"XXV");
+    public void should_convert_14_to_XIV() {
+        assertEquals(converter.convert(14),"XIV");
     }
 
     @Test
@@ -80,18 +75,23 @@ class DecimalToRomanTest {
     }
 
     @Test
-    public void should_convert_14_to_XIV() {
-        assertEquals(converter.convert(14),"XIV");
-    }
-
-    @Test
     public void should_convert_24_to_XXIV() {
         assertEquals(converter.convert(24),"XXIV");
     }
 
     @Test
+    public void should_convert_25_to_XXV() {
+    assertEquals(converter.convert(25),"XXV");
+    }
+
+    @Test
     public void should_convert_29_to_XXIX() {
         assertEquals(converter.convert(29),"XXIX");
+    }
+
+    @Test
+    public void should_convert_30_to_XXX() {
+        assertEquals(converter.convert(30),"XXX");
     }
 
     @Test
