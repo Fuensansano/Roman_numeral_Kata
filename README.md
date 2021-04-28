@@ -7,9 +7,9 @@ This kata lures a lot of people to implement features in the order of the number
 # Examples
 ![examples roman numbers](./numeros_romanos.jpeg)
 # Learnings
-- [ ] TDD
-- [ ] Version control (git)
-- [ ] Baby steps
+- [X] TDD
+- [X] Version control (git)
+- [X] Baby steps
 
 ## Authors
 Fuen Sansano [@FuenSansano](https://twitter.com/FuenSansano)
