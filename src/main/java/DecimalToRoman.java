@@ -7,7 +7,8 @@ public class DecimalToRoman {
             number = number % 10;
         }
         if (number == 9) {
-            return "IX";
+            romanNumber += "IX";
+            number -= 9;
         } else if (number >= 5) {
             romanNumber += "V";
             number -= 5;

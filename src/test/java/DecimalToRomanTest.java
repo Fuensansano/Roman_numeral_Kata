@@ -73,4 +73,9 @@ class DecimalToRomanTest {
     public void should_convert_25_to_XXV() {
     assertEquals(converter.convert(25),"XXV");
     }
+
+    @Test
+    public void should_convert_19_to_XIX() {
+        assertEquals(converter.convert(19),"XIX");
+    }
 }
