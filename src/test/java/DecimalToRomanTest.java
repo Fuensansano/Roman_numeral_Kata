@@ -153,4 +153,9 @@ class DecimalToRomanTest {
     public void should_convert_900_to_CM() {
         assertEquals(converter.convert(900),"CM");
     }
+
+    @Test
+    public void should_convert_1000_to_M() {
+        assertEquals(converter.convert(1000),"M");
+    }
 }
