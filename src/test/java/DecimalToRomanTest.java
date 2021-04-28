@@ -138,4 +138,9 @@ class DecimalToRomanTest {
     public void should_convert_301_to_CCCI() {
         assertEquals(converter.convert(301),"CCCI");
     }
+
+    @Test
+    public void should_convert_400_to_CD() {
+        assertEquals(converter.convert(400),"CD");
+    }
 }
