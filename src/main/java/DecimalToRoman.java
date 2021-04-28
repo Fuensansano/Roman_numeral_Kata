@@ -13,7 +13,8 @@ public class DecimalToRoman {
             romanNumber += "V";
             number -= 5;
         } else if (number == 4) {
-            return "IV";
+            romanNumber += "IV";
+            number -= 4;
         }
 
         romanNumber += this.concatenate("I",number);
