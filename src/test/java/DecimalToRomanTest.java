@@ -148,4 +148,9 @@ class DecimalToRomanTest {
     public void should_convert_500_to_D() {
         assertEquals(converter.convert(500),"D");
     }
+
+    @Test
+    public void should_convert_900_to_CM() {
+        assertEquals(converter.convert(900),"CM");
+    }
 }
