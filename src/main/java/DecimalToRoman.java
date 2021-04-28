@@ -1,6 +1,6 @@
 public class DecimalToRoman {
-    private String symbols [] = {"C","XC","L","XL","X","IX","V","IV","I"};
-    private int values [] =     {100, 90, 50,  40,  10,  9,  5,   4,  1};
+    private String symbols [] = {"CD","C","XC","L","XL","X","IX","V","IV","I"};
+    private int values [] =     {400, 100, 90, 50,  40,  10,  9,  5,   4,  1};
     public String convert(int number) {
         String romanNumber = "";
 
