@@ -3,8 +3,8 @@ public class DecimalToRoman {
     public String convert(int number) {
         String romanNumber = "";
         if (number >= 10) {
-            romanNumber += "X";
-            number -=10;
+            romanNumber += this.concatenate("X", number / 10);
+            number = number % 10;
         } else if (number == 9) {
             return "IX";
         } else if (number >= 5) {
