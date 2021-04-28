@@ -1,26 +1,17 @@
 public class DecimalToRoman {
-
+    private String symbols [] = {"L","X","IX","V","IV","I"};
+    private int values [] =     {50, 10,   9,  5,   4,  1};
     public String convert(int number) {
         String romanNumber = "";
-        if (number == 50) {
-            return "L";
-        }
-        if (number >= 10) {
-            romanNumber += this.concatenate("X", number / 10);
-            number = number % 10;
-        }
-        if (number == 9) {
-            romanNumber += "IX";
-            number -= 9;
-        } else if (number >= 5) {
-            romanNumber += "V";
-            number -= 5;
-        } else if (number == 4) {
-            romanNumber += "IV";
-            number -= 4;
+
+        for (int i = 0; i < symbols.length ; i++) {
+            romanNumber += this.concatenate(symbols[i], number / values[i]);
+            number %= values[i];
+            if (number == 0) {
+                return romanNumber;
+            }
         }
 
-        romanNumber += this.concatenate("I",number);
         return romanNumber;
     }
 
