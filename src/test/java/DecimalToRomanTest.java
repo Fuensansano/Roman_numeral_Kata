@@ -108,4 +108,9 @@ class DecimalToRomanTest {
     public void should_convert_50_to_L() {
         assertEquals(converter.convert(50),"L");
     }
+
+    @Test
+    public void should_convert_40_to_XL() {
+        assertEquals(converter.convert(40),"XL");
+    }
 }
