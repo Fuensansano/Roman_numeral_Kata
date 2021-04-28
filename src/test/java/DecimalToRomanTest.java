@@ -123,4 +123,9 @@ class DecimalToRomanTest {
     public void should_convert_90_to_XC() {
         assertEquals(converter.convert(90),"XC");
     }
+
+    @Test
+    public void should_convert_100_to_C() {
+        assertEquals(converter.convert(100),"C");
+    }
 }
