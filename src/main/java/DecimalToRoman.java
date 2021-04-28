@@ -3,9 +3,9 @@ public class DecimalToRoman {
     public String convert(int number) {
         String romanNumber = "";
         if (number >= 10) {
-          romanNumber += "X";
-          number -=10;
-        } else if (number == 9){
+            romanNumber += "X";
+            number -=10;
+        } else if (number == 9) {
             return "IX";
         } else if (number >= 5) {
             romanNumber += "V";
@@ -14,8 +14,14 @@ public class DecimalToRoman {
             return "IV";
         }
 
-        for (int i = 0; i < number; i++) {
-            romanNumber += "I";
+        romanNumber += this.concatenate("I",number);
+        return romanNumber;
+    }
+
+    private String concatenate(String symbol, int quantity) {
+        String romanNumber = "";
+        for (int i = 0; i < quantity; i++) {
+            romanNumber += symbol;
         }
         return romanNumber;
     }
