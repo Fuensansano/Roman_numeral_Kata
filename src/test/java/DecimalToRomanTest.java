@@ -113,4 +113,9 @@ class DecimalToRomanTest {
     public void should_convert_40_to_XL() {
         assertEquals(converter.convert(40),"XL");
     }
+
+    @Test
+    public void should_convert_49_to_XLIX() {
+        assertEquals(converter.convert(49),"XLIX");
+    }
 }
