@@ -5,7 +5,8 @@ public class DecimalToRoman {
         if (number >= 10) {
             romanNumber += this.concatenate("X", number / 10);
             number = number % 10;
-        } else if (number == 9) {
+        }
+        if (number == 9) {
             return "IX";
         } else if (number >= 5) {
             romanNumber += "V";

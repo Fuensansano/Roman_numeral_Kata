@@ -71,6 +71,6 @@ class DecimalToRomanTest {
 
     @Test
     public void should_convert_25_to_XXV() {
-        assertEquals(converter.convert(25),"XXV");
+    assertEquals(converter.convert(25),"XXV");
     }
 }
